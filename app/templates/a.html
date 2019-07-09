@@ -63,8 +63,44 @@
 
 
 <script type="text/javascript">
-	// your solution here
-
+ $(document).ready(function() {
+     
+  $('.p2-circle.bg-purple').on('click', function() {
+    $('.p2-circle.bg-purple').hide();
+  });
+   
+   $('.p2-circle.bg-green').on('click', function() {
+    alert("clicked on the right one");
+    $('.p2-circle.bg-green').hide();
+     $('.p2-circle.bg-blue').hide();
+  });
+   
+     $('.p2-circle.bg-blue.p2-border').on('click', function() {
+     $('.p2-circle.bg-blue.p2-border').hide();
+  });
+   
+     $('#gradient-circle').on('mouseover', function() {
+    $('#gradient-circle').hide();
+  });
+   
+   $('.btn.btn-light.float-right').on('click', function() {
+     $('.p2-circle.bg-purple').show();
+        $('.p2-circle.bg-green').show();
+      $('.p2-circle.bg-blue.p2-border').show();
+     $('.p2-circle.bg-blue').show();
+    $('#gradient-circle').show();
+     
+     
+  });
+//    <button class="btn btn-light float-right">
+//      $('.p2-circle.bg-green').hide();
+//      $('.p2-circle.bg-blue').hide();
+//     $('.p2-circle.bg-purple').hide();
+   
+   
+  
+ });
+  
 </script>
 </body>
 </html>
