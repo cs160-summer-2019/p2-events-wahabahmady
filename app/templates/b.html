@@ -39,8 +39,23 @@
 
 
 <script type="text/javascript">
-
-	// your solution here
+//     function addbubbles(){
+//     $('.shape-container').append("<div class="p2-circle bg-blue"></div>");
+//   }
+//   var myVar = setInterval(addbubbles, 1000);
+  
+ 
+   $('.btn.btn-light.float-right').on('click', function(){
+          clearInterval(bubbling);                                    
+   });
+  
+  
+  function addbubbles() {
+    $(".shape-container").append("<div class='p2-circle bg-blue'></div>");
+  }
+  
+  var bubbling = setInterval(function(){
+    addbubbles(); }, 1000);
 
 </script>
 </body>
